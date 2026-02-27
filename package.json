@@ -10,12 +10,13 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.7",
+    "@vercel/analytics": "^1.6.1",
+    "framer-motion": "^11.0.3",
+    "lucide-react": "^0.344.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "recharts": "^2.10.3",
-    "zustand": "^4.5.0",
-    "framer-motion": "^11.0.3",
-    "lucide-react": "^0.344.0"
+    "zustand": "^4.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
