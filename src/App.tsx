@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { useAuthStore } from './store/authStore';
 import { AuthForm } from './components/auth/AuthForm';
 import { Dashboard } from './components/dashboard/Dashboard';
@@ -21,7 +22,12 @@ function App() {
     );
   }
 
-  return user ? <Dashboard /> : <AuthForm />;
+  return (
+    <>
+      {user ? <Dashboard /> : <AuthForm />}
+      <Analytics />
+    </>
+  );
 }
 
 export default App;
